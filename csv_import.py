@@ -10,20 +10,20 @@ TICKS_PER_REV = 8192
 MICROSECONDS_PER_MINUTE = 60 * 1_000_000
 
 
-if False:
+if True:
     MOTOR_TYPE = "11w blue"
     NUM_MOTORS = 1
     X_AXIS_SCALE = 1.0
     df = pd.read_csv('new_encoder_new_psu.csv')
 else:
     MOTOR_TYPE = "5.5w"
-    NUM_MOTORS = 2
-    X_AXIS_SCALE = 0.75
+    NUM_MOTORS = 1
+    X_AXIS_SCALE = 1.0
     df = pd.read_csv('output_5.5w.csv')
 
 
-VELOCITY_X_AXIS = "percentage"
-# VELOCITY_X_AXIS = "absolute"
+# VELOCITY_X_AXIS = "percentage"
+VELOCITY_X_AXIS = "absolute"
 
 
 # Compute differences
